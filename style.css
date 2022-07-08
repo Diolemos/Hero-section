@@ -15,10 +15,29 @@ html{
     
 }
 header{
-    background-color: orangered;
+   
     height: 100vh;
-    display: flex;
-    align-items: center;
+    position: relative;
+
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.103)), url(images/hero.jpg);
+    background-size: cover;
+    color: #fff;
+   
+}
+.header-container{
+    width: 1200px;
+    position: absolute;
+    left:  50%;
+    top: 50%;
+    /* in relation to the element size */
+    transform: translate(-50%, -50%);
+   
+    
+}
+
+.header-container-inner {
+    width: 50%;
+    
 }
 
 nav{
@@ -26,12 +45,13 @@ nav{
     font-weight: 700;
     display: flex;
     justify-content: space-between;
-    background-color: green;
+    
 }
 
 h1{
     font-size: 52px;
     margin-bottom: 32px;
+    line-height: 1.05;
 }
 
 p{
@@ -57,5 +77,5 @@ h2{
 
 section{
     padding: 96px;
-    background-color: #f7f7f7;
+   
 }
